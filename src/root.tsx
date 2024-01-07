@@ -1,7 +1,6 @@
-import { Counter } from "./components/counter/counter";
-import { Logo } from "./components/logo/logo";
+import { component$ } from "@builder.io/qwik";
 
-export default () => {
+export default component$(() => {
   return (
     <>
       <head>
@@ -9,9 +8,8 @@ export default () => {
         <title>Qwik Blank App</title>
       </head>
       <body>
-        <Logo />
-        <Counter />
+        <h1>Qwik Use</h1>
       </body>
     </>
   );
-};
+});
